@@ -30,11 +30,11 @@ async def hello(_, message):
     await message.reply_text(f"Hello {message.from_user.mention}, Send /help to see a list of useless commands.")
 
 
-# /start 
+# /help 
 @app.on_message(filters.command(["start"]))
 async def start(_, message):
     await message.reply_text('''
-```
+
 Hello NoobCoder, these are some commands you can try with the BOT,
         
         General:
@@ -63,7 +63,7 @@ Hello NoobCoder, these are some commands you can try with the BOT,
       
 
         Will add more commands soon...
-```
+
         ''')
 
 # howztheworld
