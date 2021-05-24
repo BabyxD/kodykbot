@@ -31,7 +31,7 @@ async def hello(_, message):
 
 
 # /help 
-@app.on_message(filters.command(["start"]))
+@app.on_message(filters.command(["help"]))
 async def start(_, message):
     await message.reply_text('''
 
