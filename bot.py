@@ -25,7 +25,7 @@ app = Client("kodyk_bot", bot_token= Config.BOT_TOKEN ,
 
 # stuff starts here
 # /start
-@app.on_message(filters.command(["hello"]))
+@app.on_message(filters.command(["start"]))
 async def hello(_, message):
     await message.reply_text(f"Hello {message.from_user.mention}, Send /help to see a list of useless commands.")
 
